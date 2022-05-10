@@ -1,6 +1,8 @@
 const button = document.querySelectorAll(".btn-faq");
+
 button.forEach((buttons) => {
   buttons.addEventListener("click", () => {
+    removeActiveClasses();
     buttons.parentNode.classList.toggle("active");
   });
 });
